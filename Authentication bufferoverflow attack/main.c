@@ -26,7 +26,7 @@ int main()
 
     if(auth){
 
-        printf ("Now you have root access\n");
+        printf ("Greetings Professor Falken\n");
 
     }
 
