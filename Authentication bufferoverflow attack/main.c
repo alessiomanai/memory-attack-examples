@@ -16,12 +16,12 @@ int main()
     printf("Enter the password: ");
     scanf("%s", password);
 
-    if(strcmp(username, "admin") && strcmp(password, passphrase)){
-        printf ("ERROR: Access denied!\n");
-    }
-    else{
+    if(strcmp(password, passphrase) == 0){
         printf ("Access granted!\n");
         auth = 1;
+    }
+    else{
+        printf ("ERROR: Access denied!\n");
     }
 
     if(auth){
