@@ -25,10 +25,12 @@ int main()
     }
 
     if(auth){
-
-        printf ("Greetings Professor Falken\n");
-
-    }
+        printf("Greetings Professor Falken\n");
+        printf("Shall we play a game?\n");
+        playGames();
+    } else
+    		printf("Connection lost\n");
 
     return 0;
+
 }
