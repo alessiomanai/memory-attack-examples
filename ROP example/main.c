@@ -8,7 +8,7 @@ void adminPrivilege(){
 
     printf("Now you can use a command shell\n");
 
-    system("bin/sh");
+    system("/bin/sh");
 
 }
 
