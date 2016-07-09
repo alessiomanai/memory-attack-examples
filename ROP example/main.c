@@ -12,34 +12,22 @@ void adminPrivilege(){
 
 }
 
-void userFunctions(){
+void userFunctions(char* username){
 
-    printf("You are logged as a user\n");
+    char auth[10];
+
+    strcpy(auth, username);
 
     chooseOptions();
 
 }
 
-int main()
+int main(int argc, char** argv)
 {
-    char username[20];
 
-    printf("Insert username: ");
-    scanf("%s", username);
+    printf("You are logged as a user\n");
 
-    if (strcmp(username, "admin")){
-
-        adminPrivilege();
-
-    } else if (strcmp(username, "user")){
-
-        userFunctions();
-
-    } else {
-
-        printf("Access denied\n");
-
-    }
+    userFunctions(argv[1]);
 
     return 0;
 }
