@@ -3,6 +3,9 @@
 #include <string.h>
 
 char *passphrase = "unhackable";
+char *adminName = "admin";
+
+void playGames(){}
 
 int main()
 {
@@ -16,7 +19,8 @@ int main()
     printf("Enter the password: ");
     scanf("%s", password);
 
-    if(strcmp(password, passphrase) == 0){
+    if((strcmp(password, passphrase) == 0)
+		&& (strcmp(username, adminName) == 0) ){
         printf ("Access granted!\n");
         auth = 1;
     }
